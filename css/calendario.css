@@ -1,0 +1,225 @@
+:root {
+ --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   overflow: hidden;
+}
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.rectangle {
+    bottom: 13px;
+    position: relative;
+    width: 170px;
+    height: 110vh;
+    background: #26252D;
+    
+}
+.acbd {
+    top: 20px;
+    position: relative;
+    width: 130px;
+    height: 110px;
+    margin: auto;
+    background: url(/image/logo.jpeg)
+      no-repeat center;
+    background-size: cover;
+    
+}
+.ellipse {
+    top: 40px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background: url(/image/OIP.jpeg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255);
+    cursor: pointer;
+}
+.enlaces {
+    margin-left: 10px;
+    list-style-type:none ;
+    margin-top: 50px;
+
+}
+
+.enlaces li{
+    margin-top: 50px;
+}
+.enlaces a{
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+a img{
+    position: absolute;
+    width: 40px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out;
+}
+
+a img:hover {
+    transform: scale(1.1);
+    filter: invert(50%);
+    
+}
+
+/*-----------------------Estilos para el contenido principal----*/
+.content {
+    flex: 1; /* El contenido principal ocupa el espacio restante */
+    padding: 20px;
+}
+
+.content .btn-hoy{
+    height: 35px;
+    width: 65px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.content .fcha{
+  margin-left: 10px;
+  font-weight: 500;
+}
+.content .HOYY{
+    border-bottom: 1px solid #000;
+    /*display: inline-block;*/
+    margin-right: 20%;
+    padding-bottom: 5px;
+    
+}
+
+/*--------------------Estilo del calendario-----------------*/
+.content .calendario {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(7, minmax(110px, 1fr));
+    grid-template-rows: 30px;
+    grid-auto-rows: 80px;
+}
+
+.calendario .Dia{
+    text-align: right;
+    padding: 13px 13px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 12px;
+    color: black;
+}
+
+.calendario .Dia:nth-of-type(7n + 7){
+    border-right: 1px solid black;
+}
+
+.calendario .Dia:nth-of-type(n + 1):nth-of-type(-n + 7){
+    grid-row: 2;
+}
+.calendario .Dia:nth-of-type(n + 8):nth-of-type(-n + 14){
+    grid-row: 3;
+}
+.calendario .Dia:nth-of-type(n + 15):nth-of-type(-n + 21){
+    grid-row: 4;
+}
+.calendario .Dia:nth-of-type(n + 22):nth-of-type(-n + 28){
+    grid-row: 5;
+}
+.calendario .Dia:nth-of-type(n + 29):nth-of-type(-n + 35){
+    grid-row: 6;
+}
+.calendario .Dia:nth-of-type(n + 36):nth-of-type(-n + 42){
+    grid-row: 7;
+}
+.Dia:nth-of-type(7n + 1){
+   grid-column: 1/1;
+  
+}
+.Dia:nth-of-type(7n + 2){
+    grid-column: 2/2;
+    
+}
+.Dia:nth-of-type(7n + 3){
+    grid-column: 3/3;
+   
+}
+.Dia:nth-of-type(7n + 4){
+    grid-column: 4/4;
+    
+}
+.Dia:nth-of-type(7n + 5){
+    grid-column: 5/5;
+    
+}
+.Dia:nth-of-type(7n + 6){
+    grid-column: 6/6;
+    
+}
+.Dia:nth-of-type(7n + 7){
+    grid-column: 7/7;
+    
+}
+
+.calendario .day-name{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #26252D;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.dia-desabilitado {
+    background-color:rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+    color: greenyellow;
+}
+.tarea {
+    border-left: 3px solid;
+    padding: 8px 12px;
+    margin: 10px;
+    font-size: 14px;
+}
+.evento-audiencia{
+    border-left-color: green;
+    background-color: rgba(0, 128, 0, 0.5);
+    color: green;
+    font-weight: bold;
+    grid-column: 1 / 1 span;
+    grid-row: 3;
+}
+.evento-tarea{
+    border-left-color: blueviolet;
+    background-color: rgba(128, 0, 128, 0.5);
+    color: black;
+    font-weight: bold;
+    grid-column: 3 / 1 span;
+    grid-row: 5;
+}
+
+/*-----------AQUI ESTAN LOS ESTILOS DEL CALENDARIO CONTROL*/
+.calen-control {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.cal-control{
+    text-align: center;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 45px 20px;
+}
