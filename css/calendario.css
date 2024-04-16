@@ -200,6 +200,7 @@ a img:hover {
     font-weight: bold;
     grid-column: 1 / 1 span;
     grid-row: 3;
+    cursor: pointer;
 }
 .evento-tarea{
     border-left-color: blueviolet;
@@ -208,12 +209,36 @@ a img:hover {
     font-weight: bold;
     grid-column: 3 / 1 span;
     grid-row: 5;
+    cursor: pointer;
+}
+.evento-tarea img {
+    width: 35px;
+    margin-bottom: -5px;
+    margin-top: 10px
+    
 }
 
 /*-----------AQUI ESTAN LOS ESTILOS DEL CALENDARIO CONTROL*/
 .calen-control {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    border-top: 1px solid black;
+    grid-auto-rows: 20px;
+}
+.fcha-control {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.fcha-control i{
+    border-radius: 2px;
+    padding: 4px 4px 4px 4px;
+    background: #26252D;
+    cursor: pointer;
+    color: white;
+}
+.fcha-control i:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+    color: #26252D;
 }
 .cal-control{
     text-align: center;
@@ -222,4 +247,61 @@ a img:hover {
     top: 0;
     right: 0;
     padding: 45px 20px;
+}
+.Diac{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+.desabilitado {
+    color: green;
+}
+
+/*-----------AQUI ESTAN LOS ESTILOS DELAS NOTIFICACIONES*/
+.recordatorio{
+    text-align: center;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 210px 20px;
+}
+.recordatorio .icon-text {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    color: #26252D;
+}
+
+.icon-text i{
+    margin-left: 10px; /* Espacio entre el icono y el texto */
+    color: green;
+}
+.notification-list {
+   list-style-type: none;
+    padding: 0;
+}
+
+.notification-item {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-title {
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+.notification-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 5px;
 }

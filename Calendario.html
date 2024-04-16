@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/calendario.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
       </div>
       <ul class="enlaces">
           <li><a href="#"><img src="/image/logoClendario.png" alt=""></a></li>
-          <li><a href="#"><img style="width: 80px; margin-left: -20px;" src="/image/document.png" alt=""></a></li>
+          <li><a href="/Documentos.html"><img style="width: 80px; margin-left: -20px;" src="/image/document.png" alt=""></a></li>
           <li><a href="#"><img style="width: 80px; margin-left: -20px;" src="/image/audiencia.png" alt=""></a></li>
           <li><a href="#"><img src="/image/Task.png" alt=""></a></li>
       </ul>
@@ -81,13 +82,15 @@
         <section class="tarea evento-tarea"><img src="/image/Task Planning.png">Tarea 1</section>
       </div>
       <div class="cal-control">
-        <span class="fcha-control">Enero 2024</span>
+        <span class="fcha-control">
+          <i class="fa-solid fa-arrow-left"></i>  Enero 2024  <i class="fa-solid fa-arrow-right"></i>
+        </span>
         <div class="calen-control">
-          <div class="Diadesabilitado">27</div>
-          <div class="Diadesabilitado">28</div>
-          <div class="Diadesabilitado">29</div>
-          <div class="Diadesabilitado">30</div>
-          <div class="Diadesabilitado">31</div>
+          <div class="Diac desabilitado">27</div>
+          <div class="Diac desabilitado">28</div>
+          <div class="Diac desabilitado">29</div>
+          <div class="Diac desabilitado">30</div>
+          <div class="Diac desabilitado">31</div>
           <div class="Diac">1</div>
           <div class="Diac">2</div>
           <div class="Diac">3</div>
@@ -119,15 +122,33 @@
           <div class="Diac">29</div>
           <div class="Diac">30</div>
           <div class="Diac">31</div>
-          <div class="Diadesabilitado">1</div>
-          <div class="Diadesabilitado">2</div>
-          <div class="Diadesabilitado">3</div>
-          <div class="Diadesabilitado">4</div>
-          <div class="Diadesabilitado">5</div>
-          <div class="Diadesabilitado">6</div>
+          <div class="Diac desabilitado">1</div>
+          <div class="Diac desabilitado">2</div>
+          <div class="Diac desabilitado">3</div>
+          <div class="Diac desabilitado">4</div>
+          <div class="Diac desabilitado">5</div>
+          <div class="Diac desabilitado">6</div>
 
         </div>
 
+      </div>
+      <div class="recordatorio">
+        <!-- Utilizando FontAwesome para el icono de flecha -->
+        <div class="icon-text">
+          <span>Notificaciones</span>
+          <i class="fa-solid fa-bell icon"></i>
+        </div>
+        <ul class="notification-list">
+          <li class="notification-item">
+            <div class="notification-title" href="#" >Tarea 1</div>
+            <div class="notification-date">Fecha límite: 19 de marzo, 2024</div>
+          </li>
+          <li class="notification-item">
+            <div class="notification-title">Tarea 2</div>
+            <div class="notification-date">Fecha límite: 25 de abril, 2024</div>
+          </li>
+          <!-- Puedes agregar más notificaciones aquí -->
+        </ul>
       </div>
     </div>
   </div>
