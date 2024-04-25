@@ -1,0 +1,282 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.re
+  
+.main-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+.rectangle {
+    bottom: 13px;
+    position: relative;
+    width: 170px;
+    height: 110vh;
+    background: #26252D;
+    
+}
+.acbd {
+    top: 20px;
+    position: relative;
+    width: 130px;
+    height: 110px;
+    margin: auto;
+    background: url(/image/logo.jpeg)
+      no-repeat center;
+    background-size: cover;
+    
+}
+.ellipse {
+    top: 40px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background: url(/image/OIP.jpeg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255);
+    cursor: pointer;
+}
+.enlaces {
+    margin-left: 20px;
+    list-style-type:none ;
+    margin-top: 50px;
+
+}
+
+.enlaces li{
+    margin-top: 50px;
+}
+.enlaces a{
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+a img{
+    position: absolute;
+    width: 40px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out;
+}
+
+a img:hover {
+    transform: scale(1.1);
+    filter: invert(50%);
+    
+}
+
+/*Inicio del calendario de audiencias*/
+
+.rectangle-2 {
+    position: absolute;
+    width: 1095px;
+    height: 90px;
+    top: 20px;
+    left: 250px;
+    background: #26252d;
+    border: 3px solid #000000;
+    z-index: 25;
+    border-radius: 15px;
+}
+.line {
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    top: -1.030px;
+    left: 840px;
+    background: url(/images/84d3059d-4bfd-49ca-abce-d06fbb51696a.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 27;
+}
+
+.clock {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    top: 5px;
+    left: 90px;
+    background: url(/images/26f76161e16990762beaa3fe1abe74b9cd96caf1.png)
+      no-repeat center;
+    background-size: contain;
+    z-index: 29;
+}
+.literature {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    top: 5px;
+    left: 680px;
+    background: url(/images/304a12e20e34a942f98333a9fb87f451979f057f.png)
+      no-repeat center;
+    background-size: contain;
+    z-index: 30;
+}
+
+.audiencias-3 {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 325px;
+    color: #ffffff;
+    font-family: Jacques Francois, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    z-index: 81;
+}
+
+.xbox-cross {
+    position: absolute;
+    width: 60px;
+    height: 65px;
+    top: 15px;
+    left: 940px;
+    background: url(/images/a878f1e59f9249b88d5dab5966161f5afca3ecd3.png)
+      no-repeat center;
+    background-size: contain;
+    z-index: 28;
+    transition: transform 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+}
+.xbox-cross:hover{
+    transform: scale(1.1);
+    filter: invert(50%);
+    
+}
+
+.rectangle-6 {
+    position: absolute;
+    width: 1072px;
+    height: 600px;
+    top: 105px;
+    left: 260px;
+    background: #f4e9cd;
+    border: 3px solid #000000;
+    z-index: 31;
+    overflow: auto;
+}
+
+.flex-row-cce {
+    position: absolute;
+    width: 10px;
+    height: 600px;
+    top: 105px;
+    left: 610px;
+    z-index: 78;
+}
+/*comiendo de lienas***********************/
+
+.line-b{
+    position: absolute;
+    width: 1px;
+    height: 600px;
+    left: 5px;
+    top: -3px;
+    background: url(/images/b3b9a3ec-d387-4a1b-8587-0d8fa2b36c90.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 40;
+}
+
+
+
+/*fin de las lineasss--------------------------*/
+
+.contenido{
+    display: flex;
+    position: absolute;
+    width: 980px;
+    height: 100px;
+    top: 23px;
+    left: 50px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+}
+
+.contenido .flex-row-a{
+ flex: 1;
+}
+
+.contenido .flex-row-a span{
+    display: flex;
+    flex-direction: column;
+}
+.contenido .flex-row-a span .hora {
+    text-align: center;
+    color: #000000;
+    font-family: Inter, var(--default-font-family);
+    
+}
+.contenido .flex-row-a span .fecha {
+    text-align: center;
+    color: #000000;
+    
+    
+}
+.contenido .flex-row-a .sen {
+    padding-top: 5px;
+    
+}
+.contenido .flex-row-a .ubicacion{
+    padding-top: 40px;
+    
+}
+.menu-vertical-18 {
+    position: absolute;
+    width: 59px;
+    height: 50px;
+    left: 922px;
+    background: url(/images/MenuVertical.png)
+      no-repeat center;
+    background-size: contain;
+    
+}
+
+.line-2d {
+    position: absolute;
+    width: 1px;
+    height: 600px;
+    top: 105px;
+    left: 1315px;
+    background: url(/images/b3b9a3ec-d387-4a1b-8587-0d8fa2b36c90.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 40;
+}
+.line-2e {
+    position: absolute;
+    width: 1px;
+    height: 600px;
+    top: 105px;
+    left: 270px;
+    background: url(/images/b7f26a8d-dfa5-4e7c-aa37-c8afbc45ff1b.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 38;
+}
