@@ -18,10 +18,10 @@ body {
 }
 .rectangle {
     bottom: 13px;
-    position: relative;
-    width: 170px;
-    height: 110vh;
-    background: #26252D;
+  position: relative;
+  width: 170px;
+  height: 110vh;
+  background: #26252D;
     
 }
 .acbd {

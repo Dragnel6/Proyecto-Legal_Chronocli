@@ -255,9 +255,16 @@ a img:hover {
     background: url(/images/MenuVertical.png)
       no-repeat center;
     background-size: contain;
+    transition: transform 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
     
 }
 
+.menu-vertical-18:hover{
+    transform: scale(1.1);
+    filter: invert(50%); 
+}
 .line-2d {
     position: absolute;
     width: 1px;
