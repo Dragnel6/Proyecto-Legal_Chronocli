@@ -11,6 +11,75 @@ body {
     font-family: Arial, sans-serif;
     overflow: hidden;
 }
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.rectangle {
+    bottom: 13px;
+    position: relative;
+    width: 170px;
+    height: 110vh;
+    background: #26252D;
+    
+}
+.acbd {
+    top: 20px;
+    position: relative;
+    width: 130px;
+    height: 110px;
+    margin: auto;
+    background: url(/image/logo.jpeg)
+      no-repeat center;
+    background-size: cover;
+    
+}
+.ellipse {
+    top: 40px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background: url(/image/OIP.jpeg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255);
+    cursor: pointer;
+}
+.enlaces {
+    margin-left: 20px;
+    list-style-type:none ;
+    margin-top: 50px;
+  
+}
+  
+.enlaces li{
+    margin-top: 50px;
+}
+.enlaces a{
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+  
+a img{
+    position: absolute;
+    width: 40px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out;
+}
+  
+a img:hover {
+    transform: scale(1.1);
+    filter: invert(50%);
+    
+}
+/*Fin del menu ///////////////////////**/
 .containerr {
     position: absolute;
     width: 969px;
@@ -30,7 +99,7 @@ body {
 .search-input {
 
     flex: 1;
-    padding: 17px;
+    padding: 15px;
     border: 1px solid black;
     margin-left: 180px;
 }
@@ -138,6 +207,7 @@ div#segundario .Menuss .seleccion{
 .contratos {
     display: flex;
     position: absolute;
+    top: -5px;
     left: 352px;
     color: #ffffff;
     font-size: 30px;
@@ -206,7 +276,7 @@ div#segundario .Menuss .seleccion{
 
 .menus{
     position: absolute;
-    width: 140px;
+    width: 180px;
     height: 530px;
     top: 115px;
     left: 180px;
