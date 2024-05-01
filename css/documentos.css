@@ -101,7 +101,7 @@ a img:hover {
 .search-input {
 
   flex: 1;
-  padding: 17px;
+  padding: 15px;
   border: 1px solid black;
   margin-left: 180px;
 }
@@ -192,6 +192,7 @@ a img:hover {
 
 .rectangle-8 {
   position: absolute;
+  display: flex;
   width: 969px;
   height: 45px;
   top: 76px;
@@ -200,17 +201,30 @@ a img:hover {
   border: 1px solid #000000;
   z-index: 21;
 }
-
-.line-9 {
-  position: absolute;
-  width: 1px;
+.rectangle-8 .flex-row-a{
+  flex: 1;
+}
+.rectangle-8 .flex-row-a span{
+  display: flex;
   height: 45px;
-  top: -1px;
-  left: 44px;
-  background: url(/images/a111f35a-9cd3-4df6-ac5b-1898fbe224e5.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 63;
+  align-items: center;
+}
+.rectangle-8 .flex-row-a .borde{
+  width: 35px;
+  border-right: 1px solid black;
+}
+.rectangle-8 .flex-row-a .numero{
+ width: 30px;
+ text-align: center;
+}
+.rectangle-8 .flex-row-a .tipo-contrato:hover{
+  color: blue;
+  border-bottom: 1px solid blue;
+  cursor: pointer;
+  
+}
+.rectangle-8 .flex-row-a span h4{
+  font-family: Inter, var(--default-font-family);
 }
 .menu-vertical {
   position: absolute;
@@ -232,68 +246,16 @@ a img:hover {
 
 }
 
-.tipo-contrato {
-  position: absolute;
-  height: 29px;
-  top: 10px;
-  left: 113px;
-  color: #000000;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 29px;
-  z-index: 47;
-  cursor: pointer;
-}
-.tipo-contrato:hover{
-  color: blue;
-  border-bottom: 1px solid blue;
-}
-.date {
-  position: absolute;
-  height: 29px;
-  top: 10px;
-  left: 378px;
-  color: #000000;
-  font-size: 20px;
-  line-height: 29px;
-  font-weight: 400;
-  z-index: 79;
-}
-.number {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 6px;
-  left: 15px;
-  color: #000000;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 29px;
-  z-index: 55;
-}
 /*FIN DE LA CAJA DE LISTA DE DOCUMENTOS */
-.submenus {
-  display: flex;
-  position: absolute;
-  left: 200px;
-  top: 40px;
-  height: 39px;
-  color: #000000;
-  font-size: 30px;
-  font-weight: 400;
-  text-align: left;
-  white-space: nowrap;
 
-}
 
 .menus{
   position: absolute;
   width: 180px;
   height: 530px;
-  top: 80px;
+  top: 115px;
   left: 180px;
   list-style-type: none;
-  border: 1px solid #000000;
   overflow: auto;
 }
 
@@ -303,12 +265,13 @@ a img:hover {
 }
 
 .menus li a{
-  color: #26252D;
+  color: blue;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 19px;
+  font-family: Inter, var(--default-font-family);
 }
 .menus li a:hover{
-  color: blue;
-  border-bottom: 1px solid blue;
+  color: black;
+  border-left: 4px solid black;
 
 }
