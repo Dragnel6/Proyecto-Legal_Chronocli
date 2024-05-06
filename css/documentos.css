@@ -148,6 +148,7 @@ a img:hover {
   transition: transform 0.3s ease-in-out;
   transition: filter 0.3s ease-in-out;
   cursor: pointer;
+  border: none;
 }
 .rectangle-6 .xbox-cross:hover{
     transform: scale(1.1);
@@ -211,6 +212,7 @@ a img:hover {
   height: 45px;
   align-items: center;
 }
+
 .rectangle-8 .flex-row-a .borde{
   width: 35px;
   border-right: 1px solid black;
@@ -241,6 +243,7 @@ a img:hover {
   transition: transform 0.3s ease-in-out;
   transition: filter 0.3s ease-in-out;
   cursor: pointer;
+  border: none;
 }
 .menu-vertical:hover{
   transform: scale(1.1);
@@ -281,4 +284,10 @@ a img:hover {
 /*Estilo del formularioooo***************/
 .modal-backdrop {
   display: none !important;
+}
+#botonesSecundarios {
+  display: none;
+  justify-content: center;
+  width: 200px;
+  margin-left: 10px;
 }

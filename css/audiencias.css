@@ -162,6 +162,7 @@ a img:hover {
     transition: transform 0.3s ease-in-out;
     transition: filter 0.3s ease-in-out;
     cursor: pointer;
+    border: none;
 }
 .xbox-cross:hover{
     transform: scale(1.1);

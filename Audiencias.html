@@ -38,8 +38,14 @@
                         <div class="modal-body">
                             <label for="remitente">N# de caso:</label>
                             <input type="text" class="form-control" id="remitente" placeholder="Escribir">
-                            <label for="destinata">Nombre de audiencia:</label>
-                            <input type="text" class="form-control" id="destinata" placeholder="Escribir">
+                            <label for="destinata">Estado de audiencia:</label>
+                            <select class="form-control" id="tipos">
+                                <option value="">Seleccionar</option>
+                                <option value="1">Sentencia</option>
+                                <option value="2">Proceso</option>
+                                <option value="3">Completo</option>
+                                <!-- Agrega más opciones según necesites -->
+                            </select>
                             <div class="row">
                                 <div class="col-md-6">
                                   <div class="form-group">

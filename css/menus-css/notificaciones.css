@@ -1,0 +1,314 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+           Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+           "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+           "Source Han Sans CN", sans-serif;
+}
+     
+body {
+       margin: 0;
+       padding: 0;
+       font-family: Arial, sans-serif;
+       overflow: hidden;
+}
+.main-container {
+       display: flex;
+       width: 100%;
+       height: 100%;
+       margin: 0;
+}
+.rectangle {
+       bottom: 13px;
+       position: relative;
+       width: 170px;
+       height: 110vh;
+       background: #26252D;
+       
+}
+.acbd {
+       top: 20px;
+       position: relative;
+       width: 130px;
+       height: 110px;
+       margin: auto;
+       background: url(/image/logo.jpeg)
+         no-repeat center;
+       background-size: cover;
+       
+}
+.ellipse {
+       top: 40px;
+       position: relative;
+       width: 80px;
+       height: 80px;
+       margin: auto;
+       background: url(/image/OIP.jpeg)
+         no-repeat center;
+       background-size: cover;
+       z-index: 1;
+       border-radius: 50%;
+       border: 2px solid rgba(255, 255, 255);
+       cursor: pointer;
+}
+.enlaces {
+       margin-left: 20px;
+       list-style-type:none ;
+       margin-top: 50px;
+     
+}
+     
+.enlaces li{
+    margin-top: 50px;
+}
+.enlaces a{
+       text-decoration: none;
+       padding: 10px;
+       display: inline-block;
+}
+     
+a img{
+       position: absolute;
+       width: 40px;
+       margin-bottom: 50px;
+       transition: transform 0.3s ease-in-out;
+       transition: filter 0.3s ease-in-out;
+}
+     
+a img:hover {
+       transform: scale(1.1);
+       filter: invert(50%);
+       
+}
+/*Fin del menu ///////////////////////**/
+.containerr {
+       position: absolute;
+       width: 969px;
+       height: 57px;
+       top: 36px;
+       left: 390px;
+       background: #ffffff;
+       
+       z-index: 20;
+       border-radius: 10px;
+}
+.search-form {
+       display: flex;
+       align-items: center;
+       
+}
+.search-input {
+   
+       flex: 1;
+       padding: 15px;
+       border: 1px solid black;
+       margin-left: 180px;
+}
+.search-button {
+       width: 57px;
+       height: 57px;
+       background-color: #26252D;
+       border-radius: 0 5px 5px 0;
+       cursor: pointer;
+}
+.search-button img {
+       width: 25px;
+       height: 25px;
+}
+.search-button:hover{
+    background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de opacidad */
+   
+}
+.rectangle-3 {
+       text-align: center;
+       color: white;
+       position: absolute;
+       width: 185px;
+       height: 55px;
+       margin-top: -1px;
+       left: -1px;
+       background: #26252D;
+       border-radius: 5px 0 0 5px;
+       font-size: 15px;
+}
+     
+.rectangle-6 .xbox-cross {
+       position: absolute;
+       width: 35px;
+       height: 30px;
+       left: 93%;
+       background: url(/images/a878f1e59f9249b88d5dab5966161f5afca3ecd3.png)
+         no-repeat center;
+       background-size: contain;
+       transition: transform 0.3s ease-in-out;
+       transition: filter 0.3s ease-in-out;
+       cursor: pointer;
+       border: none;
+}
+.rectangle-6 .xbox-cross:hover{
+       transform: scale(1.1);
+       filter: invert(50%);
+         
+}
+/*INICIO DE LA CAJA DE LA LISTA DE DOCUMENTOS*/
+.caja {
+     position: absolute;
+     width: 969px;
+     height: 530px;
+     top: 140px;
+     left: 390px;
+     background: #ffffff;
+     border: 1px solid #000000;
+     overflow: auto;
+}
+   
+.rectangle-6{
+       width: 969px;
+      height: 80px;
+      background: #26252d;
+      border: 1px solid black;
+      display: flex;
+      position: absolute;
+      top: 115px;
+      left: 390px;
+      flex-direction: column;
+      z-index: 30;
+}
+.rectangle-7{
+       flex: 1;
+       border: 1px solid white;
+}
+   
+div#segundario{
+       display: flex;
+}
+div#segundario .Menuss{
+     flex: 1;
+     border: 1px solid white;
+     text-align: center;
+}
+div#segundario .Menuss li{
+       margin-top: 5px;
+       list-style-type: none;
+}
+div#segundario .Menuss a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+div#segundario .Menuss a:hover{
+       color: blue;
+}
+div#segundario .Menuss .seleccion{
+       height: 40px;
+       background: #26252d;
+       width: 240px;
+       color: white;
+       text-align: center;
+       font-size: 20px;
+}
+.contratos {
+       display: flex;
+       position: absolute;
+       top: -5px;
+       left: 352px;
+       color: #ffffff;
+       font-size: 30px;
+       font-weight: 400;
+       white-space: nowrap;
+       
+}
+     
+.rectangle-8 {
+       position: absolute;
+       display: flex;
+       width: 969px;
+       height: 45px;
+       top: 76px;
+       left: -1px;
+       background: #ebebeb;
+       border: 1px solid #000000;
+}
+.rectangle-8 .flex-row-a{
+       flex: 1;
+}
+.rectangle-8 .flex-row-a span{
+       display: flex;
+       height: 45px;
+       align-items: center;
+}
+.rectangle-8 .flex-row-a .borde{
+       width: 35px;
+       border-right: 1px solid black;
+}
+.rectangle-8 .flex-row-a .numero{
+      width: 30px;
+      text-align: center;
+}
+.rectangle-8 .flex-row-a .tipo-contrato:hover{
+       color: blue;
+       border-bottom: 1px solid blue;
+       cursor: pointer;
+       
+}
+.rectangle-8 .flex-row-a span h4{
+       font-family: Inter, var(--default-font-family);
+       font-size: 20px;
+}
+.menu-vertical {
+       position: absolute;
+       width: 40px;
+       height: 45px;
+       top: -1px;
+       left: 95%;;
+       background: url(/images/MenuVertical.png)
+         no-repeat center;
+       background-size: contain;
+       z-index: 71;
+       transition: transform 0.3s ease-in-out;
+       transition: filter 0.3s ease-in-out;
+       cursor: pointer;
+       border: none;
+}
+.menu-vertical:hover{
+       transform: scale(1.1);
+       filter: invert(50%);   
+     
+}
+   /*FIN DE LA CAJA DE LISTA DE DOCUMENTOS */
+   
+   
+.menus{
+       position: absolute;
+       width: 180px;
+       height: 530px;
+       top: 115px;
+       left: 180px;
+       list-style-type: none;
+       overflow: auto;
+}
+     
+.menus li {
+       margin-top: 10px;
+       margin-left: -20px;
+}
+     
+.menus li a{
+       color: blue;
+       text-decoration: none;
+       font-size: 19px;
+       font-family: Inter, var(--default-font-family);
+}
+.menus li a:hover{
+       color: black;
+       border-left: 4px solid black;
+     
+}
+.modal-backdrop {
+       display: none !important;
+}
+#botonesSecundarios {
+       display: none;
+       justify-content: center;
+       width: 200px;
+       margin-left: 10px;
+}
