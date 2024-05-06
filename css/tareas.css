@@ -169,3 +169,7 @@ a img:hover {
 .rectangle-8 .flex-row-a span h4{
     font-family: Inter, var(--default-font-family);
 }
+
+.modal-backdrop {
+    display: none !important;
+}

@@ -30,9 +30,12 @@
             <option value="">Contratos</option>
             <option value="">Sentencia</option>
             <option value="">Correspondencia</option>
+            <option value="">Notificaciones</option>
           </select>
           <input type="text" class="search-input" placeholder="Buscar...">
-          <button type="submit" class="search-button">Buscar</button>
+          <button type="submit" class="search-button">
+             <img src="/images/lupa.png" alt="">
+          </button>
         </form>
       </div>
       <!--Final del buscador--> 
@@ -40,7 +43,39 @@
       <!--Inicio de la caja de documentos--> 
       <div class="rectangle-6">
         <span class="contratos">Contratos</span>
-        <div class="xbox-cross"></div>
+        <button type="button" class="xbox-cross" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Formulario-contrato</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <label for="tipos">Seleccionar contrato:</label>
+                <select class="form-control" id="tipos">
+                  <option value="">Seleccionar</option>
+                  <option value="1">Ciudad 1</option>
+                  <option value="2">Ciudad 2</option>
+                  <option value="3">Ciudad 3</option>
+                  <!-- Agrega más opciones según necesites -->
+                </select>
+                <label for="nombre">Parte involucrada:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Escribir">
+                <label for="fecha">Seleccionar fecha:</label>
+                <input type="date" class="form-control" id="fecha">
+                <label for="archivos">Seleccionar documento:</label>
+                <input type="file" class="form-control" id="archivos">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar</button>
+                <button type="button" class="btn btn-warning">Modificar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="caja">
         <div class="rectangle-8">
@@ -198,31 +233,11 @@
         <li><a href="#">Contratos</a></li>
         <li><a href="/menus/Sentencias.html">Sentencias</a></li>
         <li><a href="/menus/Correspondencia.html">Correspondencia</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
-        <li><a href="#">Otros</a></li>
+        <li><a href="#">Notificaciones</a></li>
 
       </ul>
     </div>
-
-    
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  
 </html>

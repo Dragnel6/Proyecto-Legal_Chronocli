@@ -177,7 +177,6 @@ a img:hover {
     left: 260px;
     background: #f4e9cd;
     border: 3px solid #000000;
-    z-index: 31;
     overflow: auto;
 }
 
@@ -187,7 +186,7 @@ a img:hover {
     height: 600px;
     top: 105px;
     left: 610px;
-    z-index: 78;
+    
 }
 /*comiendo de lienas***********************/
 
@@ -286,4 +285,7 @@ a img:hover {
       no-repeat center;
     background-size: cover;
     z-index: 38;
+}
+.modal-backdrop {
+    display: none !important;
 }

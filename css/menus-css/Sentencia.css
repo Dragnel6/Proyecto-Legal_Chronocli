@@ -103,15 +103,16 @@ a img:hover {
     border: 1px solid black;
     margin-left: 180px;
 }
-  
 .search-button {
-    padding: 18px;
+    width: 57px;
+    height: 57px;
     background-color: #26252D;
-    color: #fff;
-    border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    font-size: 15px;
+}
+.search-button img {
+    width: 25px;
+    height: 25px;
 }
 .search-button:hover{
     background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de opacidad */
@@ -132,8 +133,8 @@ a img:hover {
   
 .rectangle-6 .xbox-cross {
     position: absolute;
-    width: 40px;
-    height: 35px;
+    width: 35px;
+    height: 30px;
     left: 93%;
     background: url(/images/a878f1e59f9249b88d5dab5966161f5afca3ecd3.png)
       no-repeat center;
@@ -299,4 +300,7 @@ div#segundario .Menuss .seleccion{
     color: black;
     border-left: 4px solid black;
   
+}
+.modal-backdrop {
+    display: none !important;
 }

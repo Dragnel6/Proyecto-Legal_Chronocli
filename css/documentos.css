@@ -107,13 +107,15 @@ a img:hover {
 }
 
 .search-button {
-  padding: 18px;
+  width: 57px;
+  height: 57px;
   background-color: #26252D;
-  color: #fff;
-  border: none;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-  font-size: 15px;
+}
+.search-button img {
+  width: 25px;
+  height: 25px;
 }
 .search-button:hover{
   background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de opacidad */
@@ -274,4 +276,9 @@ a img:hover {
   color: black;
   border-left: 4px solid black;
 
+}
+
+/*Estilo del formularioooo***************/
+.modal-backdrop {
+  display: none !important;
 }

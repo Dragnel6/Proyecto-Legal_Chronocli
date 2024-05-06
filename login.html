@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="css/login.css">  
-  <title>Document</title>
-</head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Register - MagtimusPro</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/css/login.css">
+</head>
 <body>
-  <section>
-    <div class="login-box">
-      <form action="">
-        <h2>Inicio de sesion</h2>
-        <div class="input-box">
-          <span class="icono"><i class="fa-regular fa-envelope"></i></span>
-          <input type="email">
-          <label for="">Correo</label>
-        </div>
-        <div class="input-box">
-          <span class="icono"><i class="fa-solid fa-lock"></i></span>
-          <input type="password">
-          <label for="">Contraseña</label>
-        </div>
-        <div class="recordar-password">
-          <label><input type="checkbox" name="" id="">recordar contraseña</label>
-          <a href="#">Olvidaste la contraseña?</a>
-        </div>
-        <button type="submit">Entrar</button>
-        <div class="Registrer">
-          <p>No te as registrado?<a href="#">Registrate</a></p>
-        </div>
-      </form>
-    </div>
-  </section>
+
+        <main>
+
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Entrar</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre completo">
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="text" placeholder="Teléfono">
+                        <input type="password" id="togglePassword" placeholder="Contraseña">
+                        <input type="passwordConfirm"id="toggleConfirmPassword" placeholder="Confirmar Contraseña">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="/js/script.js"></script>
 </body>
 </html>
