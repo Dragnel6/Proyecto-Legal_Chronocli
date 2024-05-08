@@ -202,20 +202,53 @@ a img:hover {
     grid-row: 3;
     cursor: pointer;
 }
+button#botonaudio {
+    display: flex; 
+    margin-left: -11px; 
+    height: 30px; 
+    margin-top: 10px; 
+    width: 120px;
+    background-color: rgba(0, 128, 0, 0.5);
+}
 .evento-tarea{
     border-left-color: blueviolet;
     background-color: rgba(128, 0, 128, 0.5);
-    color: black;
+    color: blueviolet;
     font-weight: bold;
     grid-column: 3 / 1 span;
     grid-row: 5;
     cursor: pointer;
 }
-.evento-tarea img {
-    width: 35px;
-    margin-bottom: -5px;
-    margin-top: 10px
+.evento-audiencia img {
+    width: 20px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 20px; /* Ajusta el tamaño de la imagen según sea necesario */
+   
     
+}
+.evento-audiencia .audio {
+    margin-top: -2px;
+    color: black;
+    font-weight: bold;
+}
+button#botontarea {
+    display: flex; 
+    margin-left: -11px; 
+    height: 30px; 
+    margin-top: 10px; 
+    width: 120px;
+    background-color: rgba(128, 0, 128, 0.5);
+}
+.evento-tarea img {
+    width: 30px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 30px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-top: -6px 
+   
+    
+}
+.evento-tarea .audio {
+    margin-top: -2px;
+    color: black;
+    font-weight: bold;
 }
 
 /*-----------AQUI ESTAN LOS ESTILOS DEL CALENDARIO CONTROL*/
